@@ -112,3 +112,14 @@
 }
 @media(max-width:950px){.tile-drone,.tile-lego{grid-column:span 6}.akai-dialog-gallery{min-height:28rem}}
 @media(max-width:700px){.tile-drone,.tile-lego{grid-column:1}.akai-dialog-gallery{min-height:24rem}}
+
+/* Balance the TonaliQ row around its wide source image. */
+.tile-tonaliq{grid-column:span 7}.tile-move{grid-column:span 5}
+.tile-tonaliq .project-open{grid-template-rows:auto 1fr}
+.tonaliq-art{min-height:0;aspect-ratio:2523/1284}
+.tonaliq-art>img{width:100%;height:auto;min-height:0;object-fit:contain;object-position:left top}
+.quick-title-wrap{position:static}
+.quick-detail{grid-template-columns:minmax(7rem,.32fr) minmax(0,1fr) auto}
+footer>span:first-child{font-weight:700}
+@media(max-width:950px){.tile-tonaliq,.tile-move{grid-column:span 6}}
+@media(max-width:700px){.tile-tonaliq,.tile-move{grid-column:1}.quick-detail{grid-template-columns:1fr}}

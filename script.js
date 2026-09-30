@@ -29,7 +29,7 @@ function makeVisual(project) {
     return;
   }
   if (project.visual === "research") { visual.innerHTML = '<span class="dialog-seven">7</span><span>model classes</span><i></i><i></i><i></i>'; return; }
-  if (project.visual === "rover") { visual.innerHTML = '<img src="assets/work/rover-vertical.png" width="411" height="561" alt="Autonomous rover navigating an obstacle course">'; return; }
+  if (project.visual === "rover") { visual.innerHTML = '<img src="assets/work/rover-vertical.png" width="983" height="1289" alt="Autonomous rover navigating an obstacle course">'; return; }
   if (project.visual === "tonaliq") {
     visual.innerHTML = '<div class="tonaliq-dialog-gallery"><img class="tonaliq-dialog-home" src="assets/work/tonaliq-home.png" width="2523" height="1284" alt="TonaliQ homepage"><img class="tonaliq-dialog-studio" src="assets/work/tonaliq-studio.png" width="2556" height="1284" alt="TonaliQ Studio feedback interface"></div>';
     return;
