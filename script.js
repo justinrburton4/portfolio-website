@@ -29,7 +29,7 @@ function makeVisual(project) {
     return;
   }
   if (project.visual === "move") {
-    visual.innerHTML = '<div class="move-dialog-gallery"><img class="move-dialog-support" src="assets/work/byu-move-sessions.png" width="2500" height="1282" alt="BYU Move staff sessions dashboard"><img class="move-dialog-vertical" src="assets/work/byu-move-vertical.png" width="600" height="1139" alt="BYU Move dashboard on a narrow screen"></div>';
+    visual.innerHTML = '<div class="move-dialog-gallery"><img class="move-dialog-vertical" src="assets/work/byu-move-vertical.png" width="600" height="1139" alt="BYU Move dashboard on a narrow screen"></div>';
     return;
   }
   visual.innerHTML = '<img src="assets/brand/red-rising.png" width="1254" height="1254" alt="Red Rising Games logo"><span>Howlers Central</span>';
