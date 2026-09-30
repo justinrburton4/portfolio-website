@@ -39,8 +39,15 @@ function openProject(key, updateUrl = true) {
   dialog.querySelector("[data-dialog-evidence]").textContent = project.evidence;
   makeVisual(project);
   const link = dialog.querySelector("[data-dialog-link]");
-  link.hidden = !project.link;
-  if (project.link) { link.href = project.link; link.firstChild.textContent = `${project.linkLabel} `; }
+  if (project.link) {
+    link.hidden = false;
+    link.href = project.link;
+    link.firstChild.textContent = `${project.linkLabel} `;
+  } else {
+    link.hidden = true;
+    link.removeAttribute("href");
+    link.firstChild.textContent = "";
+  }
   if (updateUrl) { const url = new URL(window.location.href); url.searchParams.set("project", key); history.pushState({ project: key }, "", url); }
   if (!dialog.open) dialog.showModal();
 }

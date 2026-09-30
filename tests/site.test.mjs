@@ -4,6 +4,7 @@ import test from "node:test";
 
 const html = readFileSync(new URL("../index.html", import.meta.url), "utf8");
 const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
+const script = readFileSync(new URL("../script.js", import.meta.url), "utf8");
 
 test("portfolio includes core semantic landmarks", () => {
   for (const element of ["<header", "<nav", "<main", "<h1", "<footer"]) {
@@ -34,4 +35,10 @@ test("styles preserve focus and reduced-motion behavior", () => {
   assert.match(css, /:focus-visible/);
   assert.match(css, /prefers-reduced-motion/);
   assert.doesNotMatch(css, /transition:\s*all/);
+});
+
+test("project links are removed when a project has no destination", () => {
+  assert.match(css, /\.dialog-link\[hidden\]\s*\{display:none\}/);
+  assert.match(script, /link\.removeAttribute\("href"\)/);
+  assert.match(script, /link\.firstChild\.textContent = ""/);
 });
