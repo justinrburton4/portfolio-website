@@ -39,7 +39,7 @@
 .howlers-art img{width:min(100%,13rem);height:auto;filter:drop-shadow(0 0 1.2rem rgba(208,170,98,.15))}
 .howlers-kicker{position:absolute!important;top:1.2rem!important;right:1.4rem!important;bottom:auto!important;color:#d0aa62!important;font-family:var(--body)!important;font-size:.58rem!important;font-weight:800!important;letter-spacing:.12em!important}
 .howlers-copy{align-self:end;padding:0 0 1rem 1.5rem;border-left:1px solid #4a4950}.howlers-copy strong{display:block;color:#e5e1e2;font-family:Georgia,serif;font-size:clamp(1.8rem,4vw,3.8rem);font-weight:500;line-height:.94}.howlers-copy span{position:static!important;display:block;margin-top:1rem;color:#aaa6aa!important;font-family:var(--body)!important;font-size:.66rem!important;font-weight:650!important;letter-spacing:0!important}
-.tile-info-howlers{background:#111114;color:#e5e1e2;border-top-color:#4a4950}.tile-info-howlers>div,.tile-info-howlers p{color:#aaa6aa}
+.tile-info-howlers{background:var(--serenade);color:var(--charade);border-top-color:var(--charade)}.tile-info-howlers>div,.tile-info-howlers p{color:var(--river-bed)}
 .quick-title-wrap>p:last-child{max-width:28rem;margin-top:1.4rem;color:var(--river-bed);font-size:.92rem;line-height:1.5}
 .quick-list{border-top:1px solid var(--charade)}
 .quick-list details{border-bottom:1px solid var(--heather)}
