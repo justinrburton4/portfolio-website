@@ -123,3 +123,14 @@
 footer>span:first-child{font-weight:700}
 @media(max-width:950px){.tile-tonaliq,.tile-move{grid-column:span 6}}
 @media(max-width:700px){.tile-tonaliq,.tile-move{grid-column:1}.quick-detail{grid-template-columns:1fr}}
+
+/* Alternate card weight from row to row. */
+.tile-drone{grid-column:span 5}.tile-lego{grid-column:span 7}
+.tile-howlers{grid-column:span 5}.tile-research{grid-column:span 7}
+.move-shot-primary{top:3%;left:2%;width:94%}
+.move-shot-signups{right:-10%;bottom:2%;width:70%}
+.move-shot-sessions{bottom:-5%;left:-10%;width:68%}
+.dialog-link{align-items:center;gap:.48rem}
+.dialog-link span{position:relative;top:-.1rem;left:.14rem}
+@media(max-width:950px){.tile-drone,.tile-lego,.tile-howlers,.tile-research{grid-column:span 6}}
+@media(max-width:700px){.tile-drone,.tile-lego,.tile-howlers,.tile-research{grid-column:1}}
