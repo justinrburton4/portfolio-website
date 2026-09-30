@@ -63,3 +63,12 @@
 
 .contact::after{display:none}
 @media(max-width:700px){.contact h2{margin-bottom:3rem}}
+
+.tonaliq-art{align-items:center;justify-content:center}
+.tonaliq-art>img{width:min(82%,28rem)}
+.quick-detail{grid-template-columns:minmax(9rem,.42fr) minmax(0,1fr) auto;padding:0 0 1.6rem;gap:1.25rem}
+.quick-detail>p,.quick-detail>ul{grid-column:2}
+.quick-detail>ul{margin-top:-.75rem}
+.contact{grid-template-rows:1fr}
+.contact h2{align-self:center}
+@media(max-width:700px){.quick-detail{grid-template-columns:1fr}.quick-detail>p,.quick-detail>ul{grid-column:1}.quick-detail>ul{margin-top:0}}
