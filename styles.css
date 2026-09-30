@@ -137,14 +137,14 @@ footer>span:first-child{font-weight:700}
 
 /* Project-specific image framing. */
 .portfolio-art-lego img{object-position:left center}
-.visual-lego>img{object-position:84% center}
+.visual-lego>img{object-position:80% center}
 .visual-drone>img{object-position:right center}
 .akai-card-collage{position:relative;min-height:23rem;overflow:hidden;background:#2d2d2d;isolation:isolate}
 .akai-card-collage img{position:absolute;height:auto;border:1px solid rgba(255,247,236,.55);box-shadow:0 1rem 2.25rem rgba(0,0,0,.38)}
 .akai-card-process{top:-5%;left:-15%;width:72%;transform:rotate(-5deg)}
 .akai-card-drawings{top:-2%;right:-18%;width:70%;transform:rotate(5deg)}
 .akai-card-exploded{right:4%;bottom:-14%;width:78%;transform:rotate(-2deg)}
-.akai-card-collage .akai-card-main{z-index:3;top:12%;left:10%;width:80%;transform:rotate(.5deg)}
+.akai-card-collage .akai-card-main{z-index:3;top:7%;left:10%;width:80%;transform:rotate(.5deg)}
 .akai-card-collage .image-badge{z-index:5}
 .tile-drone{grid-column:span 7}.tile-lego{grid-column:span 5}
 .tile-howlers{grid-column:span 7}.tile-research{grid-column:span 5}
