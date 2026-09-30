@@ -83,3 +83,25 @@
 .contact{grid-template-rows:1fr}
 .contact h2{align-self:center}
 @media(max-width:700px){.quick-detail{grid-template-columns:1fr}.quick-detail>p,.quick-detail>ul{grid-column:1}.quick-detail>ul{margin-top:0}}
+
+/* Edge-to-edge project media and compact desktop project stories. */
+.tonaliq-art{align-items:stretch;justify-content:stretch;padding:0;background:transparent}
+.tonaliq-art>img{display:block;width:100%;height:100%;min-height:23rem;object-fit:cover;object-position:center;filter:none}
+
+@media(min-width:951px){
+  .project-dialog{height:min(90vh,46rem);max-height:none;overflow:hidden}
+  .dialog-header{height:3.4rem;min-height:3.4rem}
+  .dialog-body{height:calc(100% - 3.4rem);min-height:0}
+  .dialog-visual{min-height:0}
+  .dialog-copy{align-self:center;padding:clamp(1.5rem,3vw,3rem)}
+  .dialog-copy>p:first-child{margin-bottom:1rem}
+  .dialog-copy h2{font-size:clamp(2.4rem,4vw,4.25rem)}
+  .dialog-lede{font-size:1rem;line-height:1.35}
+  .dialog-copy dl{margin:1.25rem 0}
+  .dialog-copy dl div{padding:.65rem 0}
+  .tonaliq-dialog-gallery{height:100%;min-height:0;gap:.6rem;padding:.6rem;overflow:hidden}
+  .tonaliq-dialog-gallery img{width:100%;height:calc((100% - .6rem)/2);object-fit:cover}
+  .visual-move{background:transparent}
+  .move-dialog-gallery{height:100%;min-height:0;padding:0}
+  .move-dialog-gallery img,.move-dialog-vertical{width:100%;max-width:none;height:100%;object-fit:cover;object-position:center;border:0}
+}
