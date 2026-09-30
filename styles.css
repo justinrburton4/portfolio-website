@@ -17,9 +17,9 @@
 /* Portfolio refinement: project identities, denser stories, and a stronger finish. */
 .stack-card-akai img{object-fit:contain;object-position:center top;background:var(--serenade)}
 .hero h1,.work-header h2,.quick-hits h2,.about h2,.contact h2,.dialog-copy h2{letter-spacing:-.035em}
-.stack-card-tonaliq{z-index:2;top:21%;left:0;width:62%;aspect-ratio:1.55;transform:rotate(-4deg);animation-delay:220ms;background:#0d1f2d}
+.stack-card-tonaliq{z-index:2;top:21%;left:0;width:66%;aspect-ratio:2556/1284;transform:rotate(-4deg);animation-delay:220ms;background:#0d1f2d}
 .stack-tonaliq{height:100%;background:#0d1f2d}
-.stack-tonaliq img{width:100%;height:100%;object-fit:cover;object-position:center;filter:none}
+.stack-tonaliq img{width:100%;height:100%;object-fit:contain;object-position:left center;filter:none}
 .stack-tonaliq span{font-size:.7rem;font-weight:700;letter-spacing:.02em}
 .hero-status{justify-content:flex-start;padding-left:0}.hero-status span:last-child{margin-left:auto}
 .work-header{display:block;margin-bottom:2rem}.work-header h2{font-size:clamp(3.8rem,8vw,9rem)}
@@ -90,7 +90,7 @@
 .tonaliq-art>img{object-position:left center}
 .tile-drone{grid-column:span 7}.tile-lego{grid-column:span 5}
 .portfolio-art{position:relative;min-height:23rem;overflow:hidden}.portfolio-art img{display:block;width:100%;height:100%;min-height:23rem;object-fit:cover}.portfolio-art-drone img{object-position:center}.portfolio-art-lego img{object-position:58% center}
-.akai-dialog-gallery{display:grid;width:100%;height:100%;min-height:38rem;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1px;background:var(--charade)}.akai-dialog-gallery img{width:100%;height:100%;object-fit:cover}.akai-dialog-gallery .akai-dialog-hero{object-position:center}
+.akai-carousel-shell{position:relative;width:100%;height:100%;min-height:38rem;overflow:hidden;background:#171719}.akai-slide-carousel{height:100%;padding:10rem 1rem;overflow-y:auto;scrollbar-width:none;scroll-snap-type:y mandatory;overscroll-behavior:contain}.akai-slide-carousel::-webkit-scrollbar{display:none}.akai-slide-carousel figure{width:94%;aspect-ratio:16/9;margin:1rem auto;overflow:hidden;border:1px solid rgba(255,247,236,.35);background:#2d2d2d;box-shadow:0 .9rem 2rem rgba(0,0,0,.4);opacity:.48;scroll-snap-align:center;transform:scale(.92);transition:opacity 180ms ease,transform 180ms ease}.akai-slide-carousel figure.is-active{z-index:2;opacity:1;transform:scale(1)}.akai-slide-carousel img{width:100%;height:100%;object-fit:contain}.akai-carousel-control{position:absolute;z-index:4;left:50%;width:2.35rem;height:2.35rem;padding:0;transform:translateX(-50%);border:1px solid var(--serenade);border-radius:50%;background:var(--charade);color:var(--serenade);cursor:pointer;font-weight:800}.akai-carousel-prev{top:.65rem}.akai-carousel-next{bottom:.65rem}.akai-carousel-control:hover{background:var(--serenade);color:var(--charade)}
 
 @media(min-width:951px){
   .project-dialog{height:min(90vh,46rem);max-height:none;overflow:hidden}
@@ -105,13 +105,13 @@
   .dialog-copy dl div{padding:.65rem 0}
   .tonaliq-dialog-gallery{height:100%;min-height:0;gap:.6rem;padding:.6rem;overflow:hidden}
   .tonaliq-dialog-gallery img{width:100%;height:calc((100% - .6rem)/2);object-fit:cover}
-  .akai-dialog-gallery{min-height:0}
+  .akai-carousel-shell{min-height:0}
   .visual-move{background:transparent}
   .move-dialog-gallery{height:100%;min-height:0;padding:0}
   .move-dialog-gallery img,.move-dialog-vertical{width:100%;max-width:none;height:100%;object-fit:cover;object-position:center;border:0}
 }
-@media(max-width:950px){.tile-drone,.tile-lego{grid-column:span 6}.akai-dialog-gallery{min-height:28rem}}
-@media(max-width:700px){.tile-drone,.tile-lego{grid-column:1}.akai-dialog-gallery{min-height:24rem}}
+@media(max-width:950px){.tile-drone,.tile-lego{grid-column:span 6}.akai-carousel-shell{min-height:28rem}.akai-slide-carousel{padding-block:8rem}}
+@media(max-width:700px){.tile-drone,.tile-lego{grid-column:1}.akai-carousel-shell{min-height:24rem}.akai-slide-carousel{padding:6rem .6rem}}
 
 /* Balance the TonaliQ row around its wide source image. */
 .tile-tonaliq{grid-column:span 7}.tile-move{grid-column:span 5}
