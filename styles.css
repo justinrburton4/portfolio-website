@@ -15,7 +15,8 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
 /* Portfolio refinement: project identities, denser stories, and a stronger finish. */
-.stack-card-akai img{object-fit:contain;background:var(--serenade)}
+.stack-card-akai img{object-fit:contain;object-position:center top;background:var(--serenade)}
+.hero h1,.work-header h2,.quick-hits h2,.about h2,.contact h2,.dialog-copy h2{letter-spacing:-.035em}
 .stack-card-tonaliq{z-index:2;top:21%;left:0;width:62%;aspect-ratio:1.55;transform:rotate(-4deg);animation-delay:220ms;background:#0d1f2d}
 .stack-tonaliq{display:flex;height:100%;flex-direction:column;align-items:center;justify-content:center;gap:1rem;padding:2rem;background:#0d1f2d;color:#f6f1e8}
 .stack-tonaliq img{width:78%;height:auto;object-fit:contain;filter:brightness(0) saturate(100%) invert(95%) sepia(8%) saturate(603%) hue-rotate(339deg) brightness(105%) contrast(104%)}
