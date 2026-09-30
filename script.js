@@ -24,7 +24,10 @@ function makeVisual(project) {
   }
   if (project.visual === "research") { visual.innerHTML = '<span class="dialog-seven">7</span><span>model classes</span><i></i><i></i><i></i>'; return; }
   if (project.visual === "tonaliq") { visual.innerHTML = '<img src="assets/brand/tonaliq.png" width="5808" height="1945" alt="TonaliQ logo"><span>Feedback for your Track.</span>'; return; }
-  if (project.visual === "move") { visual.innerHTML = '<div class="dialog-move-mark"><span>BYU</span><strong>MOVE!</strong></div><span>Participants · Mentors · Operations</span>'; return; }
+  if (project.visual === "move") {
+    visual.innerHTML = '<div class="move-dialog-gallery"><img class="move-dialog-home" src="assets/work/byu-move-home.png" width="2507" height="1275" alt="BYU Move public homepage"><img class="move-dialog-signups" src="assets/work/byu-move-signups.png" width="2402" height="1249" alt="BYU Move session signup interface"><img class="move-dialog-sessions" src="assets/work/byu-move-sessions.png" width="2500" height="1282" alt="BYU Move staff sessions dashboard"></div>';
+    return;
+  }
   visual.innerHTML = '<img src="assets/brand/red-rising.png" width="1254" height="1254" alt="Red Rising Games logo"><span>Howlers Central</span>';
 }
 
