@@ -87,6 +87,10 @@
 /* Edge-to-edge project media and compact desktop project stories. */
 .tonaliq-art{align-items:stretch;justify-content:stretch;padding:0;background:transparent}
 .tonaliq-art>img{display:block;width:100%;height:100%;min-height:23rem;object-fit:cover;object-position:center;filter:none}
+.tonaliq-art>img{object-position:left center}
+.tile-drone{grid-column:span 7}.tile-lego{grid-column:span 5}
+.portfolio-art{position:relative;min-height:23rem;overflow:hidden}.portfolio-art img{display:block;width:100%;height:100%;min-height:23rem;object-fit:cover}.portfolio-art-drone img{object-position:center}.portfolio-art-lego img{object-position:58% center}
+.akai-dialog-gallery{display:grid;width:100%;height:100%;min-height:38rem;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1px;background:var(--charade)}.akai-dialog-gallery img{width:100%;height:100%;object-fit:cover}.akai-dialog-gallery .akai-dialog-hero{object-position:center}
 
 @media(min-width:951px){
   .project-dialog{height:min(90vh,46rem);max-height:none;overflow:hidden}
@@ -101,7 +105,10 @@
   .dialog-copy dl div{padding:.65rem 0}
   .tonaliq-dialog-gallery{height:100%;min-height:0;gap:.6rem;padding:.6rem;overflow:hidden}
   .tonaliq-dialog-gallery img{width:100%;height:calc((100% - .6rem)/2);object-fit:cover}
+  .akai-dialog-gallery{min-height:0}
   .visual-move{background:transparent}
   .move-dialog-gallery{height:100%;min-height:0;padding:0}
   .move-dialog-gallery img,.move-dialog-vertical{width:100%;max-width:none;height:100%;object-fit:cover;object-position:center;border:0}
 }
+@media(max-width:950px){.tile-drone,.tile-lego{grid-column:span 6}.akai-dialog-gallery{min-height:28rem}}
+@media(max-width:700px){.tile-drone,.tile-lego{grid-column:1}.akai-dialog-gallery{min-height:24rem}}
