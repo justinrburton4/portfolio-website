@@ -137,7 +137,7 @@ footer>span:first-child{font-weight:700}
 
 /* Project-specific image framing. */
 .portfolio-art-lego img{object-position:left center}
-.visual-lego>img{object-position:72% center}
+.visual-lego>img{object-position:right center}
 .visual-drone>img{object-position:right center}
 .akai-card-collage{position:relative;min-height:23rem;overflow:hidden;background:#2d2d2d;isolation:isolate}
 .akai-card-collage img{position:absolute;height:auto;border:1px solid rgba(255,247,236,.55);box-shadow:0 1rem 2.25rem rgba(0,0,0,.38)}
@@ -150,3 +150,7 @@ footer>span:first-child{font-weight:700}
 .tile-howlers{grid-column:span 7}.tile-research{grid-column:span 5}
 @media(max-width:950px){.tile-drone,.tile-lego,.tile-howlers,.tile-research{grid-column:span 6}}
 @media(max-width:700px){.tile-drone,.tile-lego,.tile-howlers,.tile-research{grid-column:1}}
+
+/* Keep the opening row compact while preserving its card hierarchy. */
+.tile-rover .project-open,.tile-akai .project-open{min-height:0;grid-template-rows:19rem auto}
+.tile-rover .tile-image,.tile-rover .tile-image img,.akai-card-collage{height:19rem;min-height:0}
