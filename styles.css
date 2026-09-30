@@ -137,7 +137,7 @@ footer>span:first-child{font-weight:700}
 
 /* Project-specific image framing. */
 .portfolio-art-lego img{object-position:left center}
-.visual-lego>img{object-position:92% center}
+.visual-lego>img{object-position:84% center}
 .visual-drone>img{object-position:right center}
 .akai-card-collage{position:relative;min-height:23rem;overflow:hidden;background:#2d2d2d;isolation:isolate}
 .akai-card-collage img{position:absolute;height:auto;border:1px solid rgba(255,247,236,.55);box-shadow:0 1rem 2.25rem rgba(0,0,0,.38)}
